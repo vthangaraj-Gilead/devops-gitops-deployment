@@ -1,0 +1,21 @@
+replicaCount: 1
+
+deployment:
+  name: test-app-deployment
+
+appLabel: test-app
+
+nameSpace: app-poc
+
+container:
+  name: test-app-container
+
+image:
+  repository: 668749497752.dkr.ecr.us-west-2.amazonaws.com/gilead-ena-ent-platform_testdeockerworkflow
+  tag: "demo-streamlit-app-dev-latest"
+  pullPolicy: IfNotPresent
+
+containerPort: 8501
+
+nodeSelector:
+  eks.amazonaws.com/nodegroup: gilead-edna-grep-eks-cluster-nodegroup-sbx
