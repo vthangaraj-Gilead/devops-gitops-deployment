@@ -12,7 +12,7 @@ container:
 
 image:
   repository: 668749497752.dkr.ecr.us-west-2.amazonaws.com/gilead-ena-ent-platform_testdeockerworkflow
-  tag: "demo-streamlit-app-dev-latest"
+  tag: "demo-streamlit-app-dev-latest-final"
   pullPolicy: IfNotPresent
 
 containerPort: 8501
