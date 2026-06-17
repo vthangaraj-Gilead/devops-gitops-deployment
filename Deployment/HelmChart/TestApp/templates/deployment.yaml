@@ -4,6 +4,8 @@ metadata:
   name: {{ .Values.deployment.name }}
   labels:
     app: {{ .Values.appLabel }}
+  annotations:
+    argocd.argoproj.io/tracking-id: app-poc:apps/Deployment:app-poc/test-app-deployment
 namespace: {{ .Values.nameSpace }}
 spec:
   replicas: {{ .Values.replicaCount }}
