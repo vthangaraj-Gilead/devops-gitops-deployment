@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.deployment.name }}
   labels:
     app: {{ .Values.appLabel }}
-namespace: {{ .Values.nameSpace }}
+  namespace: {{ .Values.nameSpace }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
